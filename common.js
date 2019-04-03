@@ -203,13 +203,13 @@ function sortObject(object, subkey, desc) {
                     }
                 }
                 if (desc) {
-                    if (valj > vali) {
+                    if ( Number(valj ) >Number( vali)) {
                         var tmp = object[i];
                         object[i] = object[j];
                         object[j] = tmp;
                     }
                 } else {
-                    if (valj < vali) {
+                    if (Number(valj ) < Number( vali)) {
                         var tmp = object[i];
                         object[i] = object[j];
                         object[j] = tmp;
